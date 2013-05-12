@@ -1,0 +1,189 @@
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 100% "Helvetica Neue", Verdana, Arial, sans-serif;
+  line-height: 1.4;
+  color: #333;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.inline, .inline li {
+  display: inline-block;
+}
+
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.assistive-text:active,
+.assistive-text:focus {
+  background: #eee;
+  border-bottom: 1px solid #dddddd;
+  color: #1982d1;
+  clip: auto !important;
+  font-size: 12px;
+  position: absolute;
+  text-decoration: underline;
+  top: 0;
+  left: 7.6%;
+}
+
+footer {
+  margin-top: 2.25em;
+  font-size: 0.75em;
+}
+
+h1 {
+  font-family: "League Gothic";
+  font-size: 4.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+hr {
+  max-width: 3em;
+  border-bottom: 0.35em solid;
+}
+
+header {
+  text-align: center;
+  max-width: 80%;
+  padding: 6em 0 4em;
+  margin: 0 auto;
+}
+
+.post p:first-child {
+  font-weight: bold;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+}
+.post p:first-child + p:first-line {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .post {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+  }
+}

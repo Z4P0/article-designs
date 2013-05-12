@@ -1,0 +1,100 @@
+@import "pieces/normalize";
+@import "pieces/base";
+@import "pieces/classes";
+
+// media queries
+@mixin mq($breakpoint)
+{
+  @if $breakpoint == mobile
+  {
+    @media only screen and (min-width: 320px){
+      @content;
+    }
+  }
+  @else if $breakpoint == tablet
+  {
+    @media only screen and (min-width: 480px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == netbook
+  {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == desktop
+  {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+// Traditional scale //
+// --
+// 6  = 0.375em
+// 7  = 0.4375em
+// 8  = 0.5em
+// 9  = 0.5625em
+// 10 = 0.625em
+// 11 = 0.6875em
+// 12 = 0.75em
+// 14 = 0.875em
+// 16 = 1em
+// 18 = 1.125em
+// 21 = 1.3125em
+// 24 = 1.5em
+// 36 = 2.25em
+// 48 = 3em
+// 60 = 3.75em
+// 72 = 4.5em
+footer {
+	margin-top: 2.25em;
+	font-size: 0.75em;
+}
+
+h1 {
+	font-family: "League Gothic";
+	font-size: 4.5em;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 0.9;
+	margin-bottom: 0.25em;
+}
+h2 {
+	font-size: 1em;
+}
+hr {
+	max-width: 3em;
+	border-bottom: 0.35em solid;
+}
+header {
+	text-align: center;
+	max-width: 80%;
+	padding: 6em 0 4em;
+	margin: 0 auto;
+}
+.post {
+	// text-align: justify;
+	p:first-child {
+		font-weight: bold;
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+		+ p:first-line {
+			font-weight: bold;
+			text-transform: uppercase;		
+		}
+	}
+	@include mq(netbook) {
+		// column count
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+
+		// gap
+		-moz-column-gap: 3em;
+		-webkit-column-gap: 3em;
+		column-gap: 3em;
+	}
+}
